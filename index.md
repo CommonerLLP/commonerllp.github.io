@@ -13,8 +13,8 @@ be checked without special access.
 
 ## Selected repositories
 
-- [The Right to Read](https://github.com/CommonerLLP/theright2read): public library funding.
-- [academiaindia](https://github.com/CommonerLLP/academiaindia): higher-education vacancy tracking.
-- [sansad-semantic-crawler](https://github.com/CommonerLLP/sansad-semantic-crawler): Parliament corpus tooling.
-- [partial-recall](https://github.com/CommonerLLP/partial-recall): local scholarly corpus search.
-- [public-finance](https://github.com/CommonerLLP/public-finance): public-finance tooling.
+- [The Right to Read](https://github.com/CommonerLLP/theright2read): public library records, funding, and access.
+- [academiaindia](https://github.com/CommonerLLP/academiaindia): higher-education jobs, vacancies, and institutional notices.
+- [sansad-semantic-crawler](https://github.com/CommonerLLP/sansad-semantic-crawler): tools for collecting and working with parliamentary text.
+- [partial-recall](https://github.com/CommonerLLP/partial-recall): local search across research PDFs, notes, and archives.
+- [public-finance](https://github.com/CommonerLLP/public-finance): public finance records, datasets, and reproducible checks.
