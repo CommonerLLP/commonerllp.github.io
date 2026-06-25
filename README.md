@@ -8,9 +8,11 @@ and deploys through GitHub Pages.
 
 ## Local preview
 
-Requires Ruby 3.3.
+Requires Ruby 3.3 through `rbenv`. Do not use or modify macOS system Ruby.
 
 ```bash
+rbenv local 3.3.0
+bundle config set path vendor/bundle
 bundle install
 make serve
 ```
