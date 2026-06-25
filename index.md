@@ -18,3 +18,4 @@ be checked without special access.
 - [sansad-semantic-crawler](https://github.com/CommonerLLP/sansad-semantic-crawler): tools for collecting and working with parliamentary text.
 - [partial-recall](https://github.com/CommonerLLP/partial-recall): local search across research PDFs, notes, and archives.
 - [public-finance](https://github.com/CommonerLLP/public-finance): public finance records, datasets, and reproducible checks.
+- [sevent4](https://github.com/CommonerLLP/sevent4): city governance maps, jurisdiction, and service accountability.
