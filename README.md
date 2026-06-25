@@ -3,12 +3,15 @@
 Source for the CommonerLLP public website at
 [`commonerllp.org`](https://commonerllp.org/).
 
-This is a low-maintenance static GitHub Pages site for the CommonerLLP public
-homepage. It uses plain HTML, no JavaScript, and no build step.
+This is the CommonerLLP public homepage. It uses Jekyll with the Minima theme
+and deploys through GitHub Pages.
 
 ## Local preview
 
+Requires Ruby 3.3.
+
 ```bash
+bundle install
 make serve
 ```
 
@@ -16,11 +19,12 @@ Open `http://localhost:8000`.
 
 ## Files
 
-- `index.html` - public homepage
+- `index.md` - public homepage
+- `_config.yml` - Jekyll site configuration
+- `_includes/custom-head.html` - favicon link for Minima
 - `favicon.png` - site favicon, derived from the CommonerLLP GitHub avatar
 - `CNAME` - custom domain for GitHub Pages
-- `.nojekyll` - keep GitHub Pages from rewriting the site
-- `404.html` - fallback page
+- `404.md` - fallback page
 - `LICENSE` - PolyForm Noncommercial 1.0.0
 
 ## Checks

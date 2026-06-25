@@ -1,0 +1,10 @@
+title: CommonerLLP
+description: CommonerLLP public website.
+url: "https://commonerllp.org"
+theme: minima
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Makefile
+  - README.md

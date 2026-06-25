@@ -4,11 +4,11 @@ SHELL := /bin/sh
 
 help:
 	@printf '%s\n' "Targets:" \
-		"  serve  - run a local static server on http://localhost:8000" \
-		"  check  - syntax-check the HTML files with a simple parse pass"
+		"  serve  - run a local Jekyll server" \
+		"  check  - build the Jekyll site"
 
 serve:
-	python3 -m http.server 8000
+	bundle exec jekyll serve
 
 check:
-	python3 -c "from pathlib import Path; from html.parser import HTMLParser; [HTMLParser().feed(Path(p).read_text()) or print(f'ok: {p}') for p in ('index.html', '404.html')]"
+	bundle exec jekyll build
