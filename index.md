@@ -2,12 +2,14 @@
 layout: home
 ---
 
-Commoner LLP is a public-interest community building small, source-led tools and
-static public surfaces for questions of democratic access, public records,
-institutional accountability, and the commons.
+Commoner LLP is a public-interest community building small, source-led tools
+and public surfaces for democratic access, public records, institutional
+accountability, and the commons.
 
-The work is deliberately low-infrastructure: primary sources where possible,
-plain published evidence, reproducible methods, and non-commercial reuse.
+The work turns scattered evidence into durable public knowledge: findable,
+citable, reproducible, and reusable. It is deliberately low-infrastructure:
+primary sources where possible, plain published evidence, and methods that can
+be checked without special access.
 
 ## Selected repositories
 
