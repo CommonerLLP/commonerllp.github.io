@@ -1,0 +1,18 @@
+---
+---
+
+@import "minima";
+
+.site-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.site-logo {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  vertical-align: middle;
+}

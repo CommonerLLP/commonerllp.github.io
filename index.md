@@ -2,8 +2,6 @@
 layout: home
 ---
 
-<img src="/favicon.png" alt="CommonerLLP logo" width="64" height="64">
-
 CommonerLLP is a public-interest community building small, source-led tools and
 static public surfaces for questions of democratic access, public records,
 institutional accountability, and the commons.
