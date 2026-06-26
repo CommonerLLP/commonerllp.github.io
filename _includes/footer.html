@@ -5,3 +5,69 @@
     </a>
   </div>
 </footer>
+
+<script>
+  (function () {
+    var storageKey = "commoner-theme";
+    var root = document.documentElement;
+    var button = document.querySelector("[data-theme-toggle]");
+    var media = window.matchMedia("(prefers-color-scheme: dark)");
+
+    if (!button) {
+      return;
+    }
+
+    function getSystemTheme() {
+      return media.matches ? "dark" : "light";
+    }
+
+    function hasExplicitChoice() {
+      try {
+        return window.localStorage.getItem(storageKey) === "light" ||
+          window.localStorage.getItem(storageKey) === "dark";
+      } catch (error) {
+        return false;
+      }
+    }
+
+    function getActiveTheme() {
+      return root.dataset.theme === "dark" || root.dataset.theme === "light"
+        ? root.dataset.theme
+        : getSystemTheme();
+    }
+
+    function setTheme(theme, persist) {
+      root.dataset.theme = theme;
+      root.style.colorScheme = theme;
+      button.dataset.theme = theme;
+      button.setAttribute("aria-pressed", String(theme === "dark"));
+      button.setAttribute(
+        "aria-label",
+        theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
+      );
+      button.setAttribute("title", theme === "dark" ? "Switch to light mode" : "Switch to dark mode");
+
+      if (persist) {
+        try {
+          window.localStorage.setItem(storageKey, theme);
+        } catch (error) {
+          // Ignore storage failures.
+        }
+      }
+    }
+
+    setTheme(getActiveTheme(), false);
+
+    button.addEventListener("click", function () {
+      setTheme(getActiveTheme() === "dark" ? "light" : "dark", true);
+    });
+
+    if (typeof media.addEventListener === "function") {
+      media.addEventListener("change", function () {
+        if (!hasExplicitChoice()) {
+          setTheme(getSystemTheme(), false);
+        }
+      });
+    }
+  })();
+</script>

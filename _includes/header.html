@@ -4,5 +4,21 @@
       <img class="site-logo" src="{{ "/favicon.png" | relative_url }}" alt="" width="64" height="64">
       <span>{{ site.title | escape }}</span>
     </a>
+    <button
+      class="theme-toggle"
+      type="button"
+      data-theme-toggle
+      aria-label="Switch to dark mode"
+      aria-pressed="false"
+      title="Switch to dark mode"
+    >
+      <svg class="theme-toggle-icon theme-toggle-icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <circle cx="12" cy="12" r="4"></circle>
+        <path d="M12 1.5v3M12 19.5v3M4.7 4.7l2.1 2.1M17.2 17.2l2.1 2.1M1.5 12h3M19.5 12h3M4.7 19.3l2.1-2.1M17.2 6.8l2.1-2.1"></path>
+      </svg>
+      <svg class="theme-toggle-icon theme-toggle-icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M21 14.2A8.8 8.8 0 1 1 9.8 3a7.2 7.2 0 1 0 11.2 11.2z"></path>
+      </svg>
+    </button>
   </div>
 </header>

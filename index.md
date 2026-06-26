@@ -11,7 +11,7 @@ citable, reproducible, and reusable. It is deliberately low-infrastructure:
 primary sources where possible, plain published evidence, and methods that can
 be checked without special access.
 
-## Selected repositories
+## Ongoing Enquiries
 
 - [The Right to Read](https://github.com/CommonerLLP/theright2read): public library records, funding, and access.
 - [academiaindia](https://github.com/CommonerLLP/academiaindia): higher-education jobs, vacancies, and institutional notices.
